@@ -1,0 +1,226 @@
+/* Universal Start */
+
+body {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Universal End */
+
+/* Section Start */
+.sections {
+    position: relative;
+    z-index: 5;
+}
+section:not([id=home]) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0 0 0;
+}
+section p {
+    padding-bottom: 10px;
+}
+
+/* Section End */
+
+/*Navigation Start*/
+.navbar-bg-switch {
+    position: fixed;
+    width: 100%;
+
+    top: 0px;
+    left: 0px;
+
+    transition: all 0.4s ease-out 0s;
+
+    z-index: 999;
+}
+.navbar::selection {
+    background: #000;
+    color: #fff;
+}
+.navbar-logo {
+    font-family: 'Sorts Mill Goudy', 'Raleway', 'Dosis', 'Oswald', sans-serif;
+    font-size: larger;
+}
+.navbar-links {
+    font-family: 'Raleway', 'Dosis', 'Oswald', sans-serif;
+}
+/*Navigation End*/
+
+/*Home Start*/
+.upper-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+@media screen and (max-width: 640px) {
+    .upper-page {
+        margin-top: 93px;
+        height: 100%;
+    }
+}
+
+.home-img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+/*Home End*/
+
+/*About Start*/
+section h2.section-heading {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #000;
+    z-index: 1;
+    padding: 40px;
+}
+section h3.section-subheading {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    margin-bottom: 75px;
+    z-index: 1;
+}
+section h3.section-subheading.section-subheading-about {
+    margin-bottom: 77px;
+}
+
+.spacer-line-vertical {
+    position: relative;
+    display: inline-block;
+}
+.spacer-line-vertical::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: 100%;
+    left: 50%;
+    margin: 69px auto 0 auto;
+    border-right: 1px solid #5f5f5f;    
+}
+/*About End*/
+
+/*Product Start*/
+.section-margin {
+    margin-top: 140px;
+}
+
+.move-up {
+    margin-top: -20px;
+}
+
+.products-img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.image-works {
+    position: relative;
+    z-index: 5 !important;
+    padding: 5px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+}
+.image-works:hover .icon-works {
+    opacity: 1;
+}
+.image-works:hover .hover-effect {
+    opacity: 0.75;
+}
+.image-works > .hover-effect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.35s ease-out;
+}
+
+.icon-works {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+}
+.icon-works a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    width: 180px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto 0 -10px;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+.icon-works a:before {
+    position: relative;
+    z-index: 1;
+}
+.icon-works a:hover {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+.icon-works a:hover:after {
+    background: #000;
+}
+
+.zoom-item {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.preview-img-info {
+    padding: 19px 0 14px 0;
+    text-align: center;
+}
+/*Product End*/
+
+/*Footer Start*/
+footer {
+    font-family: 'Sorts Mill Goudy', 'Raleway', 'Dosis', 'Oswald', sans-serif;
+    font-size: larger;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+}
+@media (min-width: 675px) {
+    .container-nav{
+        flex-direction: row;
+    }
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 25%;
+        min-width: 250px;
+    }
+}
+/*Footer End*/
