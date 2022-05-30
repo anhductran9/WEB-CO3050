@@ -1,3 +1,7 @@
+<?php
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +32,7 @@
                     <li><a class="p" href="profile.html">PROFILE</a></li>
                 </ul>
                 <div class="rand_wrap_fix">
-                    <a href="index.html"
+                    <a href="index.php"
                         class="p rand_body rand_body_show rand_body_float"><span class="rand_img"><img
                                 src="img/Monsters1.png"
                                 alt="" width="83" class="image"></span>
@@ -36,11 +40,20 @@
                 </div>
                 <div class="rand_wrap_bk"></div>
                 <div class="header_logo">
-                    <h1 class="logo"><a class="p" href="index.html"></a></h1>
+                    <h1 class="logo"><a class="p" href="index.php"></a></h1>
                 </div>
                 <ul class="nav_right nav cf">
+                    <li><a class="p" href="logout.php"><?php
+                            if(isset($_SESSION['username'])) {
+                                echo "LOGOUT";
+                            }
+                            ?></a></li>
                     <li><a class="p" href="contact.html">CONTACT</a></li>
-                    <li><a class="p" href="login.html">LOGIN</a></li>
+                    <li><a class="p" href="login.php"><?php
+                            if(!isset($_SESSION['username'])) {
+                                echo "LOGIN";
+                            }
+                            ?></a></li>
                     <li><a class="p" href="https://hemingwayapp.com/">WRITING</a></li>
                     <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>
                     <li><a class="p" href="https://www.free4talk.com/">SPEAKING</a></li>
@@ -90,7 +103,7 @@
                                         </div>
                                     </article>
                                 </a></div>
-                            <div class="slider"><a href="index.html" class="slider_links cover p"
+                            <div class="slider"><a href="index.php" class="slider_links cover p"
                                     data-src="https://daiphattoy.vn/upload/sanpham/large/meo-nhoi-bong-tron-de-thuong-018-1627710917-ef8c3f.jpg">
                                     <article>
                                         <div class="slider_info">
@@ -114,7 +127,7 @@
                         <img class="img_index" src="https://i.pinimg.com/originals/35/f6/06/35f606daa5436e873489600496066700.jpg" alt="">
                     </a>
                     <h1>MERCH</h1>
-                    <a href="index.html">
+                    <a href="index.php">
                         <img class="img_index" src="https://daiphattoy.vn/upload/sanpham/large/meo-nhoi-bong-tron-de-thuong-018-1627710917-ef8c3f.jpg" alt="">
                     </a>
                 </div>
@@ -153,7 +166,7 @@
     </div>
     <div class="sp spnav">
         <ul>
-            <li><a class="p" href="index.html">HOME</a></li>
+            <li><a class="p" href="index.php">HOME</a></li>
             <li><a class="p" href="news.html">NEWS</a></li>
             <li><a class="p" href="game.html">TEST</a></li>
             <li><a class="p" href="profile.html">PROFILE</a></li>
@@ -161,7 +174,7 @@
             <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>
             <li><a class="p" href="https://www.free4talk.com/">SPEAKING</a></li>
             <li><a class="p" href="https://www.esl-lab.com/">LISTENING</a></li>
-            <li><a class="p" href="login.html">LOGIN</a></li>
+            <li><a class="p" href="login.php">LOGIN</a></li>
             <li><a class="p" href="contact.html">CONTACT</a></li>
             <li class="spnav_sns">
                 <ul>

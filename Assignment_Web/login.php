@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    require_once "db.php";
+    require('login_process.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +35,7 @@
                     <li><a class="p" href="profile.html">PROFILE</a></li>
                 </ul>
                 <div class="rand_wrap_fix">
-                    <a href="index.html"
+                    <a href="index.php"
                         class="p rand_body rand_body_show rand_body_float"><span class="rand_img"><img
                                 src="img/Monsters1.png"
                                 alt="" width="83" class="image"></span>
@@ -41,7 +47,7 @@
                 </div>
                 <ul class="nav_right nav cf">
                     <li><a class="p" href="contact.html">CONTACT</a></li>
-                    <li><a class="p" href="login.html">LOGIN</a></li>
+                    <li><a class="p" href="login.php">LOGIN</a></li>
                     <li><a class="p" href="https://hemingwayapp.com/">WRITING</a></li>
                     <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>
                     <li><a class="p" href="https://www.free4talk.com/">SPEAKING</a></li>
@@ -78,20 +84,21 @@
                         <div class="single_contact_section">
                             <div class="single_body_contact">
                                 <div>
-                                    <form name="" action="" method="post">
+                                    <form action="login.php" method="post">
+                                        <span><?php if (isset($error_message)) echo $error_message ?></span>
                                         </label><label class="table contact_line">
                                             <div class="td contact_h">USERNAME<span>*</span></div>
-                                            <div class="td contact_txt"><span><input type="text"
-                                                        name="level" value="" size="40"
-                                                       /></span></div>
+                                            <div class="td contact_txt"><span>
+                                                <input type="text"
+                                                        name="username" value="" size="40"/>
+                                            </span></div>
                                         </label><label class="table contact_line">
                                             <div class="td contact_h">PASSWORD<span>*</span></div>
                                             <div class="td contact_txt"><span><input type="text"
-                                                        name="topic" value="" size="40"
+                                                        name="password" value="" size="40"
                                                         /></span></div>
                                         </label>
-                                        <div><input type="submit" value="LOGIN" />
-                                        </div>
+                                        <input type="submit" value="LOGIN" />
                                     </form>
                                 </div>
                             </div>
@@ -135,7 +142,7 @@
     </div>
     <div class="sp spnav">
         <ul>
-            <li><a class="p" href="index.html">HOME</a></li>
+            <li><a class="p" href="index.php">HOME</a></li>
             <li><a class="p" href="news.html">NEWS</a></li>
             <li><a class="p" href="game.html">TEST</a></li>
             <li><a class="p" href="profile.html">PROFILE</a></li>
@@ -143,7 +150,7 @@
             <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>
             <li><a class="p" href="https://www.free4talk.com/">SPEAKING</a></li>
             <li><a class="p" href="https://www.esl-lab.com/">LISTENING</a></li>
-            <li><a class="p" href="login.html">LOGIN</a></li>
+            <li><a class="p" href="login.php">LOGIN</a></li>
             <li><a class="p" href="contact.html">CONTACT</a></li>
             <li class="spnav_sns">
                 <ul>
