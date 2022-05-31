@@ -1,6 +1,6 @@
 <?php
-    require 'php_preprocess.php';
-    require 'login_process.php';
+require 'php_preprocess.php';
+require 'register_process.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,14 +19,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- js -->
     <script src="common.js"></script>
-    <title>LOGIN | RENGLISH</title>
+    <title>REGISTER | RENGLISH</title>
 </head>
 
 <body>
 
     <div class="all">
         <!-- header start -->
-        <?php require "header.php" ?>
+        <?php require('header.php') ?>
         <!-- header end -->
         <div id="loadbody">
             <section>
@@ -41,32 +41,40 @@
                         <div class="single_contact_section">
                             <div class="single_body_contact">
                                 <div>
-                                    <form action="login.php" method="post">
+                                    <form name="" action="register.php" method="post">
                                         <span><?php if (isset($error_message)) echo $error_message ?></span>
-                                        <span><?php if (isset($_GET['msg'])) echo $_GET['msg'] ?></span>
+                                        </label><label class="table contact_line">
+                                            <div class="td contact_h">FULL NAME<span>*</span></div>
+                                            <div class="td contact_txt"><span><input type="text" name="fullname" value="" size="40" required
+                                                    /></span></div>
                                         </label><label class="table contact_line">
                                             <div class="td contact_h">USERNAME<span>*</span></div>
-                                            <div class="td contact_txt"><span>
-                                                <input type="text"
-                                                        name="username" value="" size="40" required/>
-                                            </span></div>
+                                            <div class="td contact_txt"><span><input type="text"
+                                                        name="username" value="" size="40" required
+                                                       /></span></div>
                                         </label><label class="table contact_line">
                                             <div class="td contact_h">PASSWORD<span>*</span></div>
                                             <div class="td contact_txt"><span><input type="password"
                                                         name="password" value="" size="40" required
                                                         /></span></div>
+                                        </label><label class="table contact_line">
+                                            <div class="td contact_h">RETYPE PASSWORD<span>*</span></div>
+                                            <div class="td contact_txt"><span><input type="password"
+                                                        name="re_password" value="" size="40" required
+                                                        /></span></div>
                                         </label>
-                                        <input type="submit" value="LOGIN" />
+                                        <div><input type="submit" value="REGISTER" />
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3 style="text-align: center;">Does not have an account? Register <a href="register.php">HERE</a></h3>
+                <h3 style="text-align: center;">Have an account? Login <a href="login.php">HERE</a></h3>
             </section>
         </div>
-        <br></br>
+        
         <br></br>
         <br></br>
             <img src="img/Monster_scroll.png" alt="">
