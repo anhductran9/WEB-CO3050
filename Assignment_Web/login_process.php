@@ -1,5 +1,5 @@
 <?php
-
+require "db.php";
 
 if (isset($_POST['username']) && $_POST['password']) {
 
@@ -8,7 +8,6 @@ if (isset($_POST['username']) && $_POST['password']) {
     $password = $_POST['password'];
     $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '" . $username. "' and password = '" . $password. "'");
     $validInput = validateLoginInput($username, $password);
-    echo $validInput;
     if ($validInput != "valid") {
         $error_message = $validInput;
     }
@@ -16,10 +15,11 @@ if (isset($_POST['username']) && $_POST['password']) {
         if(!empty($result)){
             if ($row = mysqli_fetch_array($result)) {
                 $_SESSION['username'] = $row['username'];
-                header("Location: index.php");
+                $msg_alert = urlencode("Login Success");
+                header("Location: index.php?alert={$msg_alert}");
             }
         }
-        $error_message = "Incorrect Email or Password!!!";
+        $error_message = "Incorrect Username or Password!!!";
     }
 }
 
