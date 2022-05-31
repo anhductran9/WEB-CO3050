@@ -22,12 +22,10 @@ require 'login_process.php';
 </head>
 
 <body>
-
     <div class="all">
         <!-- header start -->
         <?php require('header.php') ?>
         <!-- header end -->
-
         <div id="loadbody">
             <section id="">
                 <div class="slider_ol">

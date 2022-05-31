@@ -6,6 +6,7 @@ if (isset($_SESSION['username'])) {
     echo "Logged out";
     session_destroy();
     unset($_SESSION['username']);
+    unset($_SESSION['role']);
 }
 else {
     echo "Not logged in";
