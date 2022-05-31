@@ -48,7 +48,7 @@ session_start();
                                 echo "LOGOUT";
                             }
                             ?></a></li>
-                    <li><a class="p" href="contact.html">CONTACT</a></li>
+                    <li><a class="p" href="contact.html"><?php if(isset($_SESSION['role'])) if($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'mod') echo "CONTACT";?></a></li>
                     <li><a class="p" href="login.php"><?php
                             if(!isset($_SESSION['username'])) {
                                 echo "LOGIN";
