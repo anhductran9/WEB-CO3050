@@ -43,7 +43,7 @@
                                 <div>
                                     <form action="login.php" method="post">
                                         <span><?php if (isset($error_message)) echo $error_message ?></span>
-                                        <span><?php if (isset($_GET['msg'])) echo $_GET['msg'] ?></span>
+                                        <span style="font-weight: bold" ><?php if (isset($_GET['msg'])) echo $_GET['msg'] ?></span>
                                         </label><label class="table contact_line">
                                             <div class="td contact_h">USERNAME<span>*</span></div>
                                             <div class="td contact_txt"><span>

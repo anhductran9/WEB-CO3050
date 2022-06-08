@@ -1,5 +1,5 @@
 <?php
-require "db.php";
+require_once "db.php";
 
 if (isset($_POST['username']) && $_POST['password'] && isset($_POST['fullname']) && isset($_POST['re_password'])) {
     mysqli_set_charset($conn, "utf8");

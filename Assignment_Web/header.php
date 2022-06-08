@@ -4,7 +4,7 @@
         <ul class="nav_left nav cf">
             <li><a class="p" href="news.html">NEWS</a></li>
             <li><a class="p" href="game.php">TEST</a></li>
-            <li><a class="p" href="profile.html">PROFILE</a></li>
+            <li><a class="p" href="user.php">PROFILE</a></li>
         </ul>
         <div class="rand_wrap_fix">
             <a href="index.php"
@@ -66,13 +66,14 @@
         <li><a class="p" href="index.php">HOME</a></li>
         <li><a class="p" href="news.html">NEWS</a></li>
         <li><a class="p" href="game.php">TEST</a></li>
-        <li><a class="p" href="profile.html">PROFILE</a></li>
+        <li><a class="p" href="user.php">User</a></li>
         <li><a class="p" href="https://hemingwayapp.com/">WRITING</a></li>
         <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>
         <li><a class="p" href="https://www.free4talk.com/">SPEAKING</a></li>
         <li><a class="p" href="https://www.esl-lab.com/">LISTENING</a></li>
         <li><a class="p" href="login.php">LOGIN</a></li>
         <li><a class="p" href="contact.html">CONTACT</a></li>
+        <li><a class="p" href="credit.html">CREDIT</a></li>
         <li class="spnav_sns">
             <ul>
                 <li><a target="_blank" href="https://www.youtube.com/"><img

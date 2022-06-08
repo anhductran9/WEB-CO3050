@@ -1,6 +1,6 @@
 <?php
 require "php_preprocess.php";
-require "db.php";
+require_once "db.php";
 ?>
 <?php //if (isset($_SESSION['role']) == "mod") {?>
 <!DOCTYPE html>

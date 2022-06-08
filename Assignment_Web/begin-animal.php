@@ -1,6 +1,6 @@
 <?php
 require "php_preprocess.php";
-require "db.php";
+require_once "db.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
