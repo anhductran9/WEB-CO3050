@@ -25,7 +25,7 @@ require "db.php";
             $idx = intval($row['question_id']);
             $chosen_test[] = [];
             $chosen_test[count($chosen_test) - 1]['question'] = $row['question_title'];
-            var_dump($chosen_test);
+//            var_dump($chosen_test);
 
             $query_question_syntax = "SELECT * FROM answers WHERE test_id ="
                 . $_GET['chosen_test'] . " AND question_id = ". $idx;
