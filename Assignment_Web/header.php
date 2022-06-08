@@ -3,7 +3,7 @@
     <div class="header">
         <ul class="nav_left nav cf">
             <li><a class="p" href="news.html">NEWS</a></li>
-            <li><a class="p" href="game.html">TEST</a></li>
+            <li><a class="p" href="game.php">TEST</a></li>
             <li><a class="p" href="profile.html">PROFILE</a></li>
         </ul>
         <div class="rand_wrap_fix">
@@ -65,7 +65,7 @@
     <ul>
         <li><a class="p" href="index.php">HOME</a></li>
         <li><a class="p" href="news.html">NEWS</a></li>
-        <li><a class="p" href="game.html">TEST</a></li>
+        <li><a class="p" href="game.php">TEST</a></li>
         <li><a class="p" href="profile.html">PROFILE</a></li>
         <li><a class="p" href="https://hemingwayapp.com/">WRITING</a></li>
         <li><a class="p" href="https://learnenglish.britishcouncil.org/business-english/business-magazine">READING</a></li>

@@ -41,7 +41,7 @@ require 'login_process.php';
                                         </div>
                                     </article>
                                 </a></div>
-                            <div class="slider"><a href="game.html"
+                            <div class="slider"><a href="game.php"
                                     class="slider_links cover p"
                                     data-src="https://i.pinimg.com/originals/35/f6/06/35f606daa5436e873489600496066700.jpg">
                                     <article>
@@ -72,7 +72,7 @@ require 'login_process.php';
                         <img class="img_index" src="img/5251.jpg" alt="">
                     </a>
                     <h1>TEST</h1>
-                    <a href="game.html">
+                    <a href="game.php">
                         <img class="img_index" src="https://i.pinimg.com/originals/35/f6/06/35f606daa5436e873489600496066700.jpg" alt="">
                     </a>
                     <h1>MERCH</h1>

@@ -14,7 +14,6 @@ if (isset($_POST['username']) && $_POST['password'] && isset($_POST['fullname'])
     }
     else {
         $checkExist = mysqli_query($conn, "SELECT * FROM user WHERE username = '" . $username. "'");
-        var_dump($checkExist);
         if($checkExist->num_rows > 0){
             $error_message = "Username exist !!!";
         }

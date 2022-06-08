@@ -10,12 +10,11 @@
 <body>
     <div class="container" style="display: block; text-align: center; margin-top: 25vh;">
         <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore">0</h1>
+            <h1 id="finalScore"><?php if(isset($_POST['score'])) echo $_POST['score']; else 0 ?></h1>
         </div>
         <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)">Save</button>
-        <a class="btn" href="/game.html">Play Again</a>
+        <a class="btn" href="/game.php">Play Again</a>
         <a class="btn" href="/index.php">Go Home</a>
     </div>
-    <script src="end.js"></script>
 </body>
 </html>
